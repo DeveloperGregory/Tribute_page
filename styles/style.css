@@ -1,0 +1,47 @@
+body{
+    margin: 0px;
+}
+
+img{
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#header{
+    background-image: url('https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Folliebarder%2Ffiles%2F2016%2F09%2Fmario64_miyamoto-1200x675.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+}
+
+#img-div{
+    margin: auto; 
+    position: fixed;
+    top: 0px;   
+    width: 100%;
+}
+
+
+#title{
+    color: #FFFFFF;
+    margin-top: 10%;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+}
+
+#tribute-info{
+    background-color: #FFFFFF;
+    position: absolute;
+    
+    z-index: 3;
+}
