@@ -1,59 +1,112 @@
+:root{
+    --main-color: rgb(211, 17, 17);    
+}
 body{
+    background-color: var(--main-color);
     margin: 0px;
 }
+#breakpoint{
+    background-image: url('https://art.pixilart.com/82f97e33624310f.png');
+    background-repeat: repeat;
+    background-size: contain;
+    height: 20px;
+    position: relative;
+    top: 522px;    
+}
+#cover-img{
+    grid-area: image2;
+    background-color: var(--main-color);
+    font-size: .75em;
+    width: 100%;
+}
 
-img{
+#cover-img img{
     margin: auto;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+}
+
+#cover-caption{
+    background-color: white;
+    margin-top: -4px;
+    padding: 3px;
+}
+
+#end-article{
+    background-color: white;
+    grid-area: footer;
+    grid-column: 2/4;
+    padding: 5px;
+
+}
+
+#img-caption{
+    background-color: white;
+    font-size: .75em;
+    margin: 0px;
+    margin-top: -4px;
+}
+
+#img-div{
+    grid-area: image;
+    grid-column: 2/4;
     
 }
 
-p{
-    margin-left: 10px;
-    margin-right: 10px;
+#image{
+    margin: auto;
+    width: 100%;
 }
 
-#header{
+#title{
     background-color: rgb(84, 145, 164);
     background-image: url('https://images.nintendolife.com/3888206a88661/miyamoto.original.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size:cover;
-    height: 90%;
+    background-size: cover;
+    height: 70%;
     position: fixed;
     top: 0%;
     width: 100%;
-    z-index: 0;
 }
 
-#img-div{
-    background-color: blue;
-    height: 10%;
+#title h2, h3{
+    color: var(--main-color);
     position: relative;
-    left: 70%;
     text-align: center;
-    top: 430px;
-    width: 30%;
-    z-index: 3;
+    text-shadow: 2px 2px white;
+    top: 200px;
 }
 
+#title h2{
+    font-size: 24pt;
+}
 
-#title{
-    color: #8a6500;
-    margin: 0px;
-    padding: 0px;
-    position: relative;
-    text-align: center;
-    top: 230px;
-    width: 100%;
-    z-index: 2;
+#title h3{
+    font-size: 14pt;
+    margin-top: -25px;
+}
+
+#tribute-text{
+    background-color: rgb(255, 255, 255);
+    grid-area: article;
+    grid-column: 2/4;
+    margin-top: 0px;
+    padding: 8px;
+    padding-top: 0px;
+    text-align: justify;
 }
 
 #tribute-info{
-    background-color: #FFFFFF;
-    position: absolute;
-    top: 78%;
-    width: 70%;
-    z-index: 4;
+    background-color: var(--main-color);
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 30% 60% 5%;
+    grid-template-areas: 
+    "image2 article . "
+    "filler article2 ."
+    ". image ."
+    ". footer .";
+    justify-items: center;
+    position: relative;
+    top: 520px;
 }

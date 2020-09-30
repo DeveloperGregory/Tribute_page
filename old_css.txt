@@ -1,0 +1,128 @@
+:root{
+    --page-color: #e0d27f;
+}
+
+
+body{
+    background-color: var(--page-color);
+    margin: 0px;
+}
+
+img{
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#breakpoint{
+    background-image: url('https://art.pixilart.com/82f97e33624310f.png');
+    background-repeat: repeat;
+    background-size: contain;
+    height: 20px;
+    position: relative;
+    top: 456px;
+    
+}
+
+#cover-img{
+    grid-area: image2;
+}
+
+#cover-caption{
+    font-size: 0.85em ;
+    margin-top: 0px;
+}
+
+#end-article{
+    grid-area: footer;
+}
+
+#header{
+    background-color: rgb(84, 145, 164);
+    background-image: url('https://images.nintendolife.com/3888206a88661/miyamoto.original.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 90%;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 0;
+}
+
+#img-caption{
+    margin-top: 0px;
+    font-size: .85em;
+}
+
+#img-div{
+    background-color: var(--page-color);
+    grid-area: image;
+    height: 500px;
+    position: relative;
+    left: 70%;
+    text-align: center;
+    top: 455px;
+    width: 30%;
+    z-index: 3;
+}
+
+#title{
+    color: #000000;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    text-align: center;
+    text-shadow: 3px 3px rgba(0,0,0,.25);
+    top: 230px;
+    width: 100%;
+    z-index: 2;
+}
+
+#title h2{
+    font-size: 24pt;
+    margin-bottom: -16px;
+}
+
+#tribute-info{
+    background-color: var(--page-color);
+    display: grid;
+    grid-template-areas: 
+    "filler article image"
+    "image2 . filler"
+    "filler footer filler";
+    position: absolute;
+    text-align: justify;
+    top: 78%;
+    width: 70%;
+    z-index: 2;
+}
+
+#tribute-text{
+    grid-area: article;
+}
+
+@media (max-width:700px){
+    #img-div{
+        height: auto;
+        left: 0px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        position: absolute;
+        top: 1339px;
+        
+        width: 100%;
+        z-index: 5;
+
+    }
+    #tribute-info{
+        width: 100%;
+    }
+
+}
